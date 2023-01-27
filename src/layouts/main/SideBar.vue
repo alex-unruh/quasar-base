@@ -5,7 +5,7 @@
 
       <q-expansion-item icon="dashboard" label="Dashboard" caption="Monitoramento" title="Dashboard">
         <q-list padding class="rounded-borders text-primary" dense>
-          <menu-link label="Cadastrar" icon="add_circle_outline" />
+          <menu-link label="Cadastrar" icon="add_circle_outline" @click="teste" />
           <menu-link label="Gerenciar" icon="assignment" />
         </q-list>
         <q-separator />
@@ -29,5 +29,10 @@
 import MenuLink from 'src/components/MenuLink.vue';
 import { useLayoutStore } from 'src/stores/layout';
 const store = useLayoutStore();
+
+function teste() {
+  let name = "Alexandre Unruh";
+  console.log(name);
+}
 </script>
 

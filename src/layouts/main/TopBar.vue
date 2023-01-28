@@ -1,10 +1,10 @@
 <template>
   <q-header elevated>
-    <q-toolbar class="bg-blue-grey-10 glossy">
+    <q-toolbar class="bg-grey-10 glossy">
       <q-btn flat dense round icon="menu" aria-label="Menu" @click="store.toggleLeftDrawer" />
 
       <q-toolbar-title class="q-pl-lg">
-        Application
+        <q-btn round icon="home" title="Home" />
       </q-toolbar-title>
 
       <q-btn flat round dense icon="brightness_6" class="q-mr-xs" @click="app.dark.toggle();" title="Inverter Tema" />
